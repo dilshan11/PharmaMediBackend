@@ -24,6 +24,7 @@ public class MedDetailsController {
 
     @GetMapping("/AllMedDetails/{pageId}")
     public List<Medicine> getAllDetails(@PathVariable int pageId){
+        System.out.println("asas");
         return this.medicineService.getAllMedicine(pageId);
     }
 
